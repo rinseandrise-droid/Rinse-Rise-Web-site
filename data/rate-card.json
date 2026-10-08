@@ -1,0 +1,2262 @@
+{
+  "source": "Rinse&Rise Laundryrite Rate Card.xlsx",
+  "services": [
+    {
+      "id": "steam-iron",
+      "name": "Steam Iron",
+      "groups": [
+        {
+          "name": "MEN",
+          "rateHeader": "RATE",
+          "items": [
+            {
+              "name": "Shirt",
+              "sourceName": "Shirt ",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "shirt silk",
+              "sourceName": "shirt silk",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "shirt woolen",
+              "sourceName": "shirt woolen",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "T Shirt",
+              "sourceName": "T Shirt ",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Pant",
+              "sourceName": "Pant",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jeans",
+              "sourceName": "Jeans",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Coat",
+              "sourceName": "Coat",
+              "rate": 70.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Waist Coat",
+              "sourceName": "Waist Coat",
+              "rate": 30.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Long Coat",
+              "sourceName": "Long Coat ",
+              "rate": 105.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket (Half Sleeve)",
+              "sourceName": "Jacket (Half Sleeve)",
+              "rate": 70.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket (Full Sleeve)",
+              "sourceName": "Jacket (Full Sleeve)",
+              "rate": 50.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket (With Food)",
+              "sourceName": "Jacket (With Food)",
+              "rate": 80.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Leather Jacket",
+              "sourceName": "Leather Jacket ",
+              "rate": 110.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweat Shirt",
+              "sourceName": "Sweat Shirt",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweat Shirt with hood",
+              "sourceName": "Sweat Shirt with hood",
+              "rate": 80.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Full Sleeves Pain",
+              "sourceName": "Sweater Full Sleeves Pain",
+              "rate": 50.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Full Sleeves Heavy",
+              "sourceName": "Sweater Full Sleeves Heavy",
+              "rate": 70.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Half",
+              "sourceName": "Sweater Half ",
+              "rate": 40.0,
+              "unit": "piece"
+            },
+            {
+              "name": "long pull over",
+              "sourceName": "long pull over",
+              "rate": 50.0,
+              "unit": "piece"
+            },
+            {
+              "name": "kurta",
+              "sourceName": "kurta",
+              "rate": 30.0,
+              "unit": "piece"
+            },
+            {
+              "name": "kurta heavy",
+              "sourceName": "kurta heavy",
+              "rate": 40.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dhoti",
+              "sourceName": "Dhoti",
+              "rate": 40.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Safari Suit coat",
+              "sourceName": "Safari Suit coat",
+              "rate": 80.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Achkan",
+              "sourceName": "Achkan",
+              "rate": 100.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Safari Suit pant",
+              "sourceName": "Safari Suit pant",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Shorts",
+              "sourceName": "Shorts",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Pyjama",
+              "sourceName": "Pyjama",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Capri",
+              "sourceName": "Capri",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweat pants",
+              "sourceName": "Sweat pants",
+              "rate": 30.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Track Pant",
+              "sourceName": "Track Pant",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Swimming Costumes",
+              "sourceName": "Swimming Costumes",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Underwear",
+              "sourceName": "Underwear",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Vest",
+              "sourceName": "Vest",
+              "rate": 15.0,
+              "unit": "piece"
+            }
+          ]
+        },
+        {
+          "name": "WOMEN",
+          "rateHeader": "RATE",
+          "items": [
+            {
+              "name": "Kurta Plain",
+              "sourceName": "Kurta Plain ",
+              "rate": 40.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Kurta Heavy",
+              "sourceName": "Kurta Heavy",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Kurta very heavy",
+              "sourceName": "Kurta very heavy",
+              "rate": 80.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Salwar plain",
+              "sourceName": "Salwar plain",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Salwar heavy",
+              "sourceName": "Salwar heavy ",
+              "rate": 40.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Plazzo plain",
+              "sourceName": "Plazzo plain ",
+              "rate": 30.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Plazzo very heavy",
+              "sourceName": "Plazzo very heavy ",
+              "rate": 40.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dupatta plain",
+              "sourceName": "Dupatta plain",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dupatta heavy",
+              "sourceName": "Dupatta heavy",
+              "rate": 35.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dupatta very heavy",
+              "sourceName": "Dupatta very heavy ",
+              "rate": 45.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Saree plain",
+              "sourceName": "Saree plain",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Saree heavy",
+              "sourceName": "Saree heavy ",
+              "rate": 80.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Saree very heavy",
+              "sourceName": "Saree very heavy",
+              "rate": 110.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Petticoat",
+              "sourceName": "Petticoat",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Blouse plain",
+              "sourceName": "Blouse plain",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Blouse heavy",
+              "sourceName": "Blouse heavy",
+              "rate": 40.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Blouse very heavy",
+              "sourceName": "Blouse very heavy ",
+              "rate": 50.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dress plain",
+              "sourceName": "Dress plain ",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dress heavy",
+              "sourceName": "Dress heavy ",
+              "rate": 70.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dress very heavy",
+              "sourceName": "Dress very heavy ",
+              "rate": 80.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Lehnga Plain",
+              "sourceName": "Lehnga Plain",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Lehnga Heavy",
+              "sourceName": "Lehnga Heavy",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Lehnga Very Heavy",
+              "sourceName": "Lehnga Very Heavy",
+              "rate": 230.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Bridal Lehnga Blouse",
+              "sourceName": "Bridal Lehnga Blouse",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Skirt Short Plain",
+              "sourceName": "Skirt Short Plain",
+              "rate": 35.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Skirt Short Heavy",
+              "sourceName": "Skirt Short Heavy ",
+              "rate": 45.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Skirt Short Very Heavy",
+              "sourceName": "Skirt Short Very Heavy",
+              "rate": 55.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Skirt Long Plain",
+              "sourceName": "Skirt Long Plain",
+              "rate": 45.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Skirt Long Heavy",
+              "sourceName": "Skirt Long Heavy ",
+              "rate": 55.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Skirt Long Very Heavy",
+              "sourceName": "Skirt Long Very Heavy ",
+              "rate": 65.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Top Plain",
+              "sourceName": "Top Plain ",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Top Very Heavy",
+              "sourceName": "Top Very Heavy ",
+              "rate": 25.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Shirt",
+              "sourceName": "Shirt",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "T Shirt",
+              "sourceName": "T Shirt ",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Pants",
+              "sourceName": "Pants",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jeans",
+              "sourceName": "Jeans",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jumper",
+              "sourceName": "Jumper ",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dangree",
+              "sourceName": "Dangree",
+              "rate": 30.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Legging",
+              "sourceName": "Legging",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Capri",
+              "sourceName": "Capri",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Slacks",
+              "sourceName": "Slacks",
+              "rate": 30.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Stole Heavy",
+              "sourceName": "Stole Heavy ",
+              "rate": 35.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Stole Plain",
+              "sourceName": "Stole Plain ",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Stole Very Heavy",
+              "sourceName": "Stole Very Heavy ",
+              "rate": 45.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Shawl Plain",
+              "sourceName": "Shawl Plain ",
+              "rate": 30.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Shawl Heavy",
+              "sourceName": "Shawl Heavy ",
+              "rate": 35.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Shawl Very Heavy",
+              "sourceName": "Shawl Very Heavy ",
+              "rate": 45.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Scarf",
+              "sourceName": "Scarf ",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Coat",
+              "sourceName": "Coat ",
+              "rate": 70.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Long Coat",
+              "sourceName": "Long Coat",
+              "rate": 100.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket Full Sleeves",
+              "sourceName": "Jacket Full Sleeves",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket Half  Sleeves",
+              "sourceName": "Jacket Half  Sleeves",
+              "rate": 40.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweat Shirt With Hood",
+              "sourceName": "Sweat Shirt With Hood ",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Full Sleeves Plain",
+              "sourceName": "Sweater Full Sleeves Plain ",
+              "rate": 45.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Ful Sleeves Heavy",
+              "sourceName": "Sweater Ful Sleeves Heavy ",
+              "rate": 55.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Half Sleeves Plain",
+              "sourceName": "Sweater Half Sleeves Plain ",
+              "rate": 25.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Half Sleeves Heavy",
+              "sourceName": "Sweater Half Sleeves Heavy ",
+              "rate": 35.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Long Pullover",
+              "sourceName": "Long Pullover ",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Stocking",
+              "sourceName": "Stocking ",
+              "rate": 35.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Truck Pant",
+              "sourceName": "Truck Pant ",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Brassieres",
+              "sourceName": "Brassieres",
+              "rate": 15.0,
+              "unit": "piece"
+            }
+          ]
+        },
+        {
+          "name": "KIDS",
+          "rateHeader": "RATE",
+          "items": [
+            {
+              "name": "Shirt",
+              "sourceName": "Shirt ",
+              "rate": 12.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Shirt Woolen",
+              "sourceName": "Shirt Woolen ",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "T Shirt",
+              "sourceName": "T Shirt",
+              "rate": 12.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Top Plain",
+              "sourceName": "Top Plain ",
+              "rate": 12.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Top Heavy",
+              "sourceName": "Top Heavy ",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Pants",
+              "sourceName": "Pants ",
+              "rate": 12.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jeans",
+              "sourceName": "Jeans",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Capri",
+              "sourceName": "Capri",
+              "rate": 12.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Shorts",
+              "sourceName": "Shorts ",
+              "rate": 12.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jumper",
+              "sourceName": "Jumper",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dangree",
+              "sourceName": "Dangree",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Frock Plain",
+              "sourceName": "Frock Plain ",
+              "rate": 30.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Frock Heavy",
+              "sourceName": "Frock Heavy ",
+              "rate": 40.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Frock Very Heavy",
+              "sourceName": "Frock Very Heavy ",
+              "rate": 50.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dress Plain",
+              "sourceName": "Dress Plain ",
+              "rate": 50.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dress Heavy",
+              "sourceName": "Dress Heavy",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dress Very Heavy",
+              "sourceName": "Dress Very Heavy",
+              "rate": 70.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sherwani",
+              "sourceName": "Sherwani",
+              "rate": 80.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Kurta Plain",
+              "sourceName": "Kurta Plain ",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Kurta Very Heavy",
+              "sourceName": "Kurta Very Heavy ",
+              "rate": 25.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Salwar Heavy",
+              "sourceName": "Salwar Heavy ",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dupatta",
+              "sourceName": "Dupatta ",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dupatta Heavy",
+              "sourceName": "Dupatta Heavy ",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dupatta Very Heavy",
+              "sourceName": "Dupatta Very Heavy ",
+              "rate": 25.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Blouse",
+              "sourceName": "Blouse ",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Blouse Heavy",
+              "sourceName": "Blouse Heavy",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Lehnga Plain",
+              "sourceName": "Lehnga Plain ",
+              "rate": 100.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Lehnga Heavy",
+              "sourceName": "Lehnga Heavy ",
+              "rate": 120.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Coat",
+              "sourceName": "Coat ",
+              "rate": 40.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Waist Coat",
+              "sourceName": "Waist Coat ",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Long Coat",
+              "sourceName": "Long Coat ",
+              "rate": 35.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Long Pullover",
+              "sourceName": "Long Pullover ",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket Full Sleeves",
+              "sourceName": "Jacket Full Sleeves ",
+              "rate": 35.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket Half Sleeves",
+              "sourceName": "Jacket Half Sleeves",
+              "rate": 25.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket With Hood",
+              "sourceName": "Jacket With Hood ",
+              "rate": 55.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Full Sleeves Heavy",
+              "sourceName": "Sweater Full Sleeves Heavy ",
+              "rate": 35.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Full Sleeves Plain",
+              "sourceName": "Sweater Full Sleeves Plain ",
+              "rate": 25.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Half Sleeves Heavy",
+              "sourceName": "Sweater Half Sleeves Heavy ",
+              "rate": 30.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Half Sleeves Plain",
+              "sourceName": "Sweater Half Sleeves Plain ",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweat Shirt",
+              "sourceName": "Sweat Shirt ",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweat Shirt With Hood",
+              "sourceName": "Sweat Shirt With Hood",
+              "rate": 25.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Swimming Costume",
+              "sourceName": "Swimming Costume ",
+              "rate": 10.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Legging",
+              "sourceName": "Legging",
+              "rate": 12.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Track Pant",
+              "sourceName": "Track Pant",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Baby Blanket",
+              "sourceName": "Baby Blanket",
+              "rate": 50.0,
+              "unit": "piece"
+            }
+          ]
+        },
+        {
+          "name": "OTHERS",
+          "rateHeader": "RATE",
+          "items": [
+            {
+              "name": "Handkerchief",
+              "sourceName": "Handkerchief",
+              "rate": 7.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Bath Robe",
+              "sourceName": "Bath Robe ",
+              "rate": 30.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Muffer",
+              "sourceName": "Muffer ",
+              "rate": 20.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Tie",
+              "sourceName": "Tie",
+              "rate": 10.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Face Mask",
+              "sourceName": "Face Mask ",
+              "rate": 10.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Bed Sheet Single",
+              "sourceName": "Bed Sheet Single ",
+              "rate": 30.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Bed Sheet Double",
+              "sourceName": "Bed Sheet Double ",
+              "rate": 40.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Pillow Cover",
+              "sourceName": "Pillow Cover ",
+              "rate": 15.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Curtain Door 7/4 ft",
+              "sourceName": "Curtain Door 7/4 ft",
+              "rate": 100.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Curtain Window 4/4ft",
+              "sourceName": "Curtain Window 4/4ft",
+              "rate": 80.0,
+              "unit": "piece"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dry-clean",
+      "name": "Dry Clean",
+      "groups": [
+        {
+          "name": "MEN",
+          "rateHeader": "RATE /pice",
+          "items": [
+            {
+              "name": "Shirt",
+              "sourceName": "Shirt ",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "shirt silk",
+              "sourceName": "shirt silk",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "shirt woolen",
+              "sourceName": "shirt woolen",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "T Shirt",
+              "sourceName": "T Shirt ",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Pant",
+              "sourceName": "Pant",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jeans",
+              "sourceName": "Jeans",
+              "rate": 140.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Coat",
+              "sourceName": "Coat",
+              "rate": 270.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Waist Coat",
+              "sourceName": "Waist Coat",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Long Coat",
+              "sourceName": "Long Coat ",
+              "rate": 310.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket (Half Sleeve)",
+              "sourceName": "Jacket (Half Sleeve)",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket (Full Sleeve)",
+              "sourceName": "Jacket (Full Sleeve)",
+              "rate": 280.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket (With Hood)",
+              "sourceName": "Jacket (With Hood)",
+              "rate": 280.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Leather Jacket",
+              "sourceName": "Leather Jacket ",
+              "rate": 480.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweat Shirt",
+              "sourceName": "Sweat Shirt",
+              "rate": 170.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweat Shirt with hood",
+              "sourceName": "Sweat Shirt with hood",
+              "rate": 200.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Full Sleeves Pain",
+              "sourceName": "Sweater Full Sleeves Pain",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Full Sleeves Heavy",
+              "sourceName": "Sweater Full Sleeves Heavy",
+              "rate": 220.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Half",
+              "sourceName": "Sweater Half ",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "long pull over",
+              "sourceName": "long pull over",
+              "rate": 310.0,
+              "unit": "piece"
+            },
+            {
+              "name": "kurta",
+              "sourceName": "kurta",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "kurta heavy",
+              "sourceName": "kurta heavy",
+              "rate": 190.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dhoti",
+              "sourceName": "Dhoti",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Safari Suit coat",
+              "sourceName": "Safari Suit coat",
+              "rate": 310.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Achkan",
+              "sourceName": "Achkan",
+              "rate": 310.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Safari Suit pant",
+              "sourceName": "Safari Suit pant",
+              "rate": 150.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Shorts",
+              "sourceName": "Shorts",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Pyjama",
+              "sourceName": "Pyjama",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Capri",
+              "sourceName": "Capri",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweat pants",
+              "sourceName": "Sweat pants",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Track Pant",
+              "sourceName": "Track Pant",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Swimming Costumes",
+              "sourceName": "Swimming Costumes",
+              "rate": 200.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Underwear",
+              "sourceName": "Underwear",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Vest",
+              "sourceName": "Vest",
+              "rate": 60.0,
+              "unit": "piece"
+            }
+          ]
+        },
+        {
+          "name": "WOMEN",
+          "rateHeader": "RATE",
+          "items": [
+            {
+              "name": "Kurta Plain",
+              "sourceName": "Kurta Plain ",
+              "rate": 140.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Kurta Heavy",
+              "sourceName": "Kurta Heavy",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Kurta very heavy",
+              "sourceName": "Kurta very heavy",
+              "rate": 280.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Salwar plain",
+              "sourceName": "Salwar plain",
+              "rate": 110.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Salwar heavy",
+              "sourceName": "Salwar heavy ",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Plazzo plain",
+              "sourceName": "Plazzo plain ",
+              "rate": 150.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Plazzo very heavy",
+              "sourceName": "Plazzo very heavy ",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dupatta plain",
+              "sourceName": "Dupatta plain",
+              "rate": 90.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dupatta heavy",
+              "sourceName": "Dupatta heavy",
+              "rate": 120.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dupatta very heavy",
+              "sourceName": "Dupatta very heavy ",
+              "rate": 150.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Saree plain",
+              "sourceName": "Saree plain",
+              "rate": 250.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Saree heavy",
+              "sourceName": "Saree heavy ",
+              "rate": 350.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Saree very heavy",
+              "sourceName": "Saree very heavy",
+              "rate": 450.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Petticoat",
+              "sourceName": "Petticoat",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Blouse plain",
+              "sourceName": "Blouse plain",
+              "rate": 70.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Blouse heavy",
+              "sourceName": "Blouse heavy",
+              "rate": 110.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Blouse very heavy",
+              "sourceName": "Blouse very heavy ",
+              "rate": 150.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dress plain",
+              "sourceName": "Dress plain ",
+              "rate": 250.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dress heavy",
+              "sourceName": "Dress heavy ",
+              "rate": 280.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dress very heavy",
+              "sourceName": "Dress very heavy ",
+              "rate": 350.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Lehnga Plain",
+              "sourceName": "Lehnga Plain",
+              "rate": 500.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Lehnga Heavy",
+              "sourceName": "Lehnga Heavy",
+              "rate": 750.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Lehnga Very Heavy",
+              "sourceName": "Lehnga Very Heavy",
+              "rate": 950.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Bridal Lehnga Blouse",
+              "sourceName": "Bridal Lehnga Blouse",
+              "rate": 150.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Skirt Short Plain",
+              "sourceName": "Skirt Short Plain",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Skirt Short Heavy",
+              "sourceName": "Skirt Short Heavy ",
+              "rate": 220.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Skirt Short Very Heavy",
+              "sourceName": "Skirt Short Very Heavy",
+              "rate": 280.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Skirt Long Plain",
+              "sourceName": "Skirt Long Plain",
+              "rate": 220.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Skirt Long Heavy",
+              "sourceName": "Skirt Long Heavy ",
+              "rate": 280.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Skirt Long Very Heavy",
+              "sourceName": "Skirt Long Very Heavy ",
+              "rate": 350.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Top Plain",
+              "sourceName": "Top Plain ",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Top Very Heavy",
+              "sourceName": "Top Very Heavy ",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Shirt",
+              "sourceName": "Shirt",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "T Shirt",
+              "sourceName": "T Shirt ",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Pants",
+              "sourceName": "Pants",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jeans",
+              "sourceName": "Jeans",
+              "rate": 140.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jumper",
+              "sourceName": "Jumper ",
+              "rate": 150.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dangree",
+              "sourceName": "Dangree",
+              "rate": 210.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Legging",
+              "sourceName": "Legging",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Capri",
+              "sourceName": "Capri",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Slacks",
+              "sourceName": "Slacks",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Stole Plain",
+              "sourceName": "Stole Plain ",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Stole Heavy",
+              "sourceName": "Stole Heavy",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Stole Very Heavy",
+              "sourceName": "Stole Very Heavy ",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Shawl Plain",
+              "sourceName": "Shawl Plain ",
+              "rate": 140.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Shawl Heavy",
+              "sourceName": "Shawl Heavy ",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Shawl Very Heavy",
+              "sourceName": "Shawl Very Heavy ",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Scarf",
+              "sourceName": "Scarf ",
+              "rate": 110.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Coat",
+              "sourceName": "Coat ",
+              "rate": 200.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Long Coat",
+              "sourceName": "Long Coat",
+              "rate": 310.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket Full Sleeves",
+              "sourceName": "Jacket Full Sleeves",
+              "rate": 280.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket Half  Sleeves",
+              "sourceName": "Jacket Half  Sleeves",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket With Sleeves",
+              "sourceName": "Jacket With Sleeves",
+              "rate": 280.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweat Shirt With Hood",
+              "sourceName": "Sweat Shirt With Hood ",
+              "rate": 200.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Full Sleeves Plain",
+              "sourceName": "Sweater Full Sleeves Plain ",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Ful Sleeves Heavy",
+              "sourceName": "Sweater Ful Sleeves Heavy ",
+              "rate": 220.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Half Sleeves Plain",
+              "sourceName": "Sweater Half Sleeves Plain ",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Half Sleeves Heavy",
+              "sourceName": "Sweater Half Sleeves Heavy ",
+              "rate": 220.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Long Pullover",
+              "sourceName": "Long Pullover ",
+              "rate": 310.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Stocking",
+              "sourceName": "Stocking ",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Truck Pant",
+              "sourceName": "Truck Pant ",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Brassieres",
+              "sourceName": "Brassieres",
+              "rate": 60.0,
+              "unit": "piece"
+            }
+          ]
+        },
+        {
+          "name": "KIDS",
+          "rateHeader": "RATE",
+          "items": [
+            {
+              "name": "Shirt",
+              "sourceName": "Shirt ",
+              "rate": 100.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Shirt Woolen",
+              "sourceName": "Shirt Woolen ",
+              "rate": 120.0,
+              "unit": "piece"
+            },
+            {
+              "name": "T Shirt",
+              "sourceName": "T Shirt",
+              "rate": 100.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Top Plain",
+              "sourceName": "Top Plain ",
+              "rate": 100.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Top Heavy",
+              "sourceName": "Top Heavy ",
+              "rate": 150.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Pants",
+              "sourceName": "Pants ",
+              "rate": 100.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jeans",
+              "sourceName": "Jeans",
+              "rate": 110.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Capri",
+              "sourceName": "Capri",
+              "rate": 110.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Shorts",
+              "sourceName": "Shorts ",
+              "rate": 70.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jumper",
+              "sourceName": "Jumper",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dangree",
+              "sourceName": "Dangree",
+              "rate": 140.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Frock Plain",
+              "sourceName": "Frock Plain ",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Frock Heavy",
+              "sourceName": "Frock Heavy ",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Frock Very Heavy",
+              "sourceName": "Frock Very Heavy ",
+              "rate": 200.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dress Plain",
+              "sourceName": "Dress Plain ",
+              "rate": 170.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dress Heavy",
+              "sourceName": "Dress Heavy",
+              "rate": 260.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dress Very Heavy",
+              "sourceName": "Dress Very Heavy",
+              "rate": 280.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sherwani",
+              "sourceName": "Sherwani",
+              "rate": 200.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Kurta Plain",
+              "sourceName": "Kurta Plain ",
+              "rate": 120.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Kurta Very Heavy",
+              "sourceName": "Kurta Very Heavy ",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Salwar Plain",
+              "sourceName": "Salwar Plain",
+              "rate": 110.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Salwar Heavy",
+              "sourceName": "Salwar Heavy ",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dupatta",
+              "sourceName": "Dupatta ",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dupatta Heavy",
+              "sourceName": "Dupatta Heavy ",
+              "rate": 100.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Dupatta Very Heavy",
+              "sourceName": "Dupatta Very Heavy ",
+              "rate": 140.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Blouse Plain",
+              "sourceName": "Blouse Plain ",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Blouse Heavy",
+              "sourceName": "Blouse Heavy",
+              "rate": 100.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Lehnga Plain",
+              "sourceName": "Lehnga Plain ",
+              "rate": 400.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Lehnga Heavy",
+              "sourceName": "Lehnga Heavy ",
+              "rate": 500.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Coat",
+              "sourceName": "Coat ",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Waist Coat",
+              "sourceName": "Waist Coat ",
+              "rate": 90.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Long Coat",
+              "sourceName": "Long Coat ",
+              "rate": 280.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Long Pullover",
+              "sourceName": "Long Pullover ",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket Full Sleeves",
+              "sourceName": "Jacket Full Sleeves ",
+              "rate": 200.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket Half Sleeves",
+              "sourceName": "Jacket Half Sleeves",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Jacket With Hood",
+              "sourceName": "Jacket With Hood ",
+              "rate": 230.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Full Sleeves Plain",
+              "sourceName": "Sweater Full Sleeves Plain",
+              "rate": 140.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Full Sleeves Heavy",
+              "sourceName": "Sweater Full Sleeves Heavy ",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Half Sleeves Heavy",
+              "sourceName": "Sweater Half Sleeves Heavy ",
+              "rate": 150.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweater Half Sleeves Plain",
+              "sourceName": "Sweater Half Sleeves Plain ",
+              "rate": 120.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweat Shirt",
+              "sourceName": "Sweat Shirt ",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sweat Shirt With Hood",
+              "sourceName": "Sweat Shirt With Hood",
+              "rate": 200.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Swimming Costume",
+              "sourceName": "Swimming Costume ",
+              "rate": 40.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Legging",
+              "sourceName": "Legging",
+              "rate": 120.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Track Pant",
+              "sourceName": "Track Pant",
+              "rate": 90.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Baby Blanket",
+              "sourceName": "Baby Blanket",
+              "rate": 250.0,
+              "unit": "piece"
+            }
+          ]
+        },
+        {
+          "name": "HOUSEHOLD",
+          "rateHeader": "RATE",
+          "items": [
+            {
+              "name": "Curtain Door 7/4ft",
+              "sourceName": "Curtain Door 7/4ft",
+              "rate": 250.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Curtain Door With Lining 7/4ft",
+              "sourceName": "Curtain Door With Lining 7/4ft",
+              "rate": 400.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Curtain Window 4/4 ft",
+              "sourceName": "Curtain Window 4/4 ft",
+              "rate": 200.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Curtain Window With Lining 4/4 ft",
+              "sourceName": "Curtain Window With Lining 4/4 ft",
+              "rate": 300.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Curtain Belt",
+              "sourceName": "Curtain Belt ",
+              "rate": 140.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Blanket Single",
+              "sourceName": "Blanket Single ",
+              "rate": 380.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Blanket Single 2 ply",
+              "sourceName": "Blanket Single 2 ply ",
+              "rate": 400.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Blanket Double",
+              "sourceName": "Blanket Double ",
+              "rate": 450.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Blanket Double 2Ply",
+              "sourceName": "Blanket Double 2Ply ",
+              "rate": 480.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Quilt Single",
+              "sourceName": "Quilt Single ",
+              "rate": 400.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Quilt Double",
+              "sourceName": "Quilt Double ",
+              "rate": 500.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Quilt Cover Single",
+              "sourceName": "Quilt Cover Single ",
+              "rate": 150.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Quilt Cover Double",
+              "sourceName": "Quilt Cover Double ",
+              "rate": 170.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Bed sheet Single",
+              "sourceName": "Bed sheet Single ",
+              "rate": 150.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Bed sheet Double",
+              "sourceName": "Bed sheet Double ",
+              "rate": 190.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sofa Cover Small",
+              "sourceName": "Sofa Cover Small ",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sofa Cover Medium",
+              "sourceName": "Sofa Cover Medium ",
+              "rate": 110.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sofa Cover Larg",
+              "sourceName": "Sofa Cover Larg ",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Cushion Covers",
+              "sourceName": "Cushion Covers",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Cushion Cover Medium",
+              "sourceName": "Cushion Cover Medium ",
+              "rate": 110.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Cushion Cover Large",
+              "sourceName": "Cushion Cover Large",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Cushion Samll",
+              "sourceName": "Cushion Samll",
+              "rate": 150.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Cushion Medium",
+              "sourceName": "Cushion Medium ",
+              "rate": 210.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Cushion Larg",
+              "sourceName": "Cushion Larg ",
+              "rate": 300.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Pillow Cover",
+              "sourceName": "Pillow Cover ",
+              "rate": 50.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Chair Cover",
+              "sourceName": "Chair Cover ",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Hand Towel",
+              "sourceName": "Hand Towel ",
+              "rate": 40.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Towel Larg",
+              "sourceName": "Towel Larg ",
+              "rate": 130.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Carpet",
+              "sourceName": "Carpet ",
+              "rate": 40.0,
+              "unit": "sq",
+              "rateText": "40/sq"
+            },
+            {
+              "name": "Table Cloth Small",
+              "sourceName": "Table Cloth Small ",
+              "rate": 80.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Table Cloth Large",
+              "sourceName": "Table Cloth Large ",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Table Mat",
+              "sourceName": "Table Mat ",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Foot Mats",
+              "sourceName": "Foot Mats ",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Mattress Single",
+              "sourceName": "Mattress Single ",
+              "rate": 1000.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Mattress Double",
+              "sourceName": "Mattress Double ",
+              "rate": 2000.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Bed Head",
+              "sourceName": "Bed Head ",
+              "rate": 1500.0,
+              "unit": "piece"
+            }
+          ]
+        },
+        {
+          "name": "OTHER",
+          "rateHeader": "RATE",
+          "items": [
+            {
+              "name": "Soft Toy Small",
+              "sourceName": "Soft Toy Small",
+              "rate": 200.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Soft Toy Medium",
+              "sourceName": "Soft Toy Medium ",
+              "rate": 300.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Soft Toy Large",
+              "sourceName": "Soft Toy Large ",
+              "rate": 400.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Soft Toy Extra Large",
+              "sourceName": "Soft Toy Extra Large",
+              "rate": 500.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Suit Case Medium",
+              "sourceName": "Suit Case Medium ",
+              "rate": 400.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Suit Case Small",
+              "sourceName": "Suit Case Small",
+              "rate": 250.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Suit Case Large",
+              "sourceName": "Suit Case Large",
+              "rate": 500.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Suit Case Exta Large",
+              "sourceName": "Suit Case Exta Large",
+              "rate": 710.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Handbag Canvass Jute Cloth Based Large",
+              "sourceName": "Handbag Canvass Jute Cloth Based Large",
+              "rate": 410.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Handbag Canvass Jute Cloth Based Small",
+              "sourceName": "Handbag Canvass Jute Cloth Based Small",
+              "rate": 280.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Handbag Leather Small",
+              "sourceName": "Handbag Leather Small ",
+              "rate": 410.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Handbag Leather Large",
+              "sourceName": "Handbag Leather Large",
+              "rate": 610.0,
+              "unit": "piece"
+            },
+            {
+              "name": "HandKerchief",
+              "sourceName": "HandKerchief ",
+              "rate": 40.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Hat",
+              "sourceName": "Hat ",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Cap",
+              "sourceName": "Cap",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Muffler",
+              "sourceName": "Muffler",
+              "rate": 110.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Rain Cost",
+              "sourceName": "Rain Cost ",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Tie",
+              "sourceName": "Tie",
+              "rate": 50.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Bath Robe",
+              "sourceName": "Bath Robe",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Belt",
+              "sourceName": "Belt ",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Wallet",
+              "sourceName": "Wallet ",
+              "rate": 160.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Car Seat Cover",
+              "sourceName": "Car Seat Cover",
+              "rate": 180.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Gloves",
+              "sourceName": "Gloves ",
+              "rate": 70.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Socks",
+              "sourceName": "Socks ",
+              "rate": 70.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Face Mask",
+              "sourceName": "Face Mask ",
+              "rate": 60.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Seat Cover",
+              "sourceName": "Seat Cover",
+              "rate": 60.0,
+              "unit": "piece"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "laundry",
+      "name": "Laundry",
+      "groups": [
+        {
+          "name": "Laundry Service",
+          "rateHeader": "RATE",
+          "items": [
+            {
+              "name": "Wash And Steam Iron",
+              "sourceName": "Wash And Steam Iron ",
+              "rate": 125.0,
+              "unit": "kg"
+            },
+            {
+              "name": "Wash And Fold",
+              "sourceName": "Wash And Fold",
+              "rate": 80.0,
+              "unit": "kg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shoe-cleaning",
+      "name": "Shoe Cleaning",
+      "groups": [
+        {
+          "name": "SHOES",
+          "rateHeader": "RATE",
+          "items": [
+            {
+              "name": "Sport Shoes",
+              "sourceName": "Sport Shoes ",
+              "rate": 350.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Canvass Shoes",
+              "sourceName": "Canvass Shoes ",
+              "rate": 350.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Leather Shoes",
+              "sourceName": "Leather Shoes ",
+              "rate": 480.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Suede Leather",
+              "sourceName": "Suede Leather",
+              "rate": 510.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Sandals",
+              "sourceName": "Sandals ",
+              "rate": 310.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Slippers",
+              "sourceName": "Slippers",
+              "rate": 210.0,
+              "unit": "piece"
+            },
+            {
+              "name": "Boots",
+              "sourceName": "Boots",
+              "rate": 700.0,
+              "unit": "piece"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
