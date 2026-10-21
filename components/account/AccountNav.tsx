@@ -14,13 +14,13 @@ const LINKS = [
 export function AccountNav() {
   const pathname = usePathname();
   return (
-    <nav aria-label="Account" className="flex flex-wrap gap-2">
+    <nav aria-label="Account" className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       {LINKS.map((l) => (
         <Link
           key={l.href}
           href={l.href}
           aria-current={pathname === l.href ? "page" : undefined}
-          className="chip aria-[current=page]:bg-orange aria-[current=page]:text-white"
+          className="chip shrink-0 aria-[current=page]:bg-orange aria-[current=page]:text-white"
         >
           {l.label}
         </Link>

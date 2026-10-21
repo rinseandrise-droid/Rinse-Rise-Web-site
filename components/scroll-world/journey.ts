@@ -3,7 +3,7 @@
  * scroll progress maps linearly onto it. Tune pacing here.
  *
  *  0  intro — shirt on hanger            58  door opens, shirt to dryer
- *  8  shirt leaves hanger                 66  tumble dry
+ *  8  shirt leaves hanger                 66  dry
  * 16  washer door opens, shirt enters     75  shirt to ironing board
  * 24  wash — water, drum, bubbles         78  steam press
  * 32  foam / deep clean                   84  quality check
@@ -38,7 +38,7 @@ export const CAPTIONS: Caption[] = [
   {
     id: "dry",
     eyebrow: "04 · Dry",
-    title: "Tumble dry",
+    title: "Dry",
     body: "Gentle, even drying with controlled heat.",
     note: "Drying method selected according to fabric care requirements.",
     in: 66.5,

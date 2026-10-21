@@ -25,9 +25,9 @@ export function AuthGateModal() {
       onClose={closeAuthGate}
       onClick={(e) => e.target === dialogRef.current && closeAuthGate()}
       aria-labelledby="auth-gate-title"
-      className="m-auto w-[min(92vw,440px)] rounded-[28px] bg-transparent p-0 backdrop:bg-ink/45 backdrop:backdrop-blur-sm"
+      className="m-auto max-h-[min(90dvh,640px)] w-[min(92vw,440px)] overflow-y-auto rounded-[24px] bg-transparent p-0 backdrop:bg-ink/45 backdrop:backdrop-blur-sm sm:rounded-[28px]"
     >
-      <div className="neo relative p-7 sm:p-8">
+      <div className="neo relative p-6 sm:p-8">
         <button
           type="button"
           onClick={closeAuthGate}

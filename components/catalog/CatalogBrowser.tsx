@@ -55,13 +55,13 @@ export function CatalogBrowser({
             placeholder="Search for shirts, sarees, blankets…"
           />
         </label>
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="-mx-1 mt-4 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <FilterChip label="All services" active={serviceId === "all"} onClick={() => setServiceId("all")} />
           {services.map((s) => (
             <FilterChip key={s.id} label={s.name} active={serviceId === s.id} onClick={() => setServiceId(s.id)} />
           ))}
         </div>
-        <div className="mt-3 flex flex-wrap gap-2">
+        <div className="-mx-1 mt-3 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <FilterChip label="All groups" active={groupId === "all"} onClick={() => setGroupId("all")} />
           {groupFilters.map((g) => (
             <FilterChip key={g.id} label={g.name} active={groupId === g.id} onClick={() => setGroupId(g.id)} />
@@ -69,9 +69,9 @@ export function CatalogBrowser({
         </div>
         <div className="mt-4 flex flex-wrap items-center justify-between gap-3 text-sm">
           <p className="font-semibold text-muted">{rows.length} items</p>
-          <label className="flex items-center gap-2 font-semibold">
+          <label className="flex min-w-0 items-center gap-2 font-semibold">
             Sort
-            <select className="input min-h-10 py-1" value={sort} onChange={(e) => setSort(e.target.value as typeof sort)}>
+            <select className="input min-h-10 min-w-0 py-1 text-sm" value={sort} onChange={(e) => setSort(e.target.value as typeof sort)}>
               <option value="name">Name</option>
               <option value="price-asc">Price · low to high</option>
               <option value="price-desc">Price · high to low</option>
@@ -93,7 +93,7 @@ export function CatalogBrowser({
 
 function FilterChip({ label, active, onClick }: { label: string; active: boolean; onClick: () => void }) {
   return (
-    <button type="button" className="chip" aria-pressed={active} onClick={onClick}>
+    <button type="button" className="chip shrink-0" aria-pressed={active} onClick={onClick}>
       {label}
     </button>
   );
@@ -101,16 +101,16 @@ function FilterChip({ label, active, onClick }: { label: string; active: boolean
 
 function ItemCards({ items }: { items: ServiceItem[] }) {
   return (
-    <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+    <ul className="mt-6 grid gap-3 lg:grid-cols-2">
       {items.map((item) => (
-        <li key={item.id} className="neo-sm flex items-center justify-between gap-3 p-4">
-          <div>
+        <li key={item.id} className="neo-sm flex flex-col gap-3 p-4 min-[480px]:flex-row min-[480px]:items-center min-[480px]:justify-between">
+          <div className="min-w-0">
             <p className="font-bold">{item.name}</p>
             <p className="text-xs font-semibold uppercase tracking-[0.12em] text-muted">
               {labelFor(item)} · {formatRate(item)}
             </p>
           </div>
-          <AddToOrder item={item} />
+          <AddToOrder item={item} className="w-full min-[480px]:w-auto" />
         </li>
       ))}
     </ul>
@@ -120,7 +120,7 @@ function ItemCards({ items }: { items: ServiceItem[] }) {
 function DesktopTable({ items }: { items: ServiceItem[] }) {
   return (
     <>
-      <div className="mt-6 hidden overflow-hidden rounded-[24px] border border-line md:block">
+      <div className="mt-6 hidden overflow-x-auto rounded-[24px] border border-line lg:block">
         <table className="w-full text-left text-sm">
           <thead className="bg-cream text-xs uppercase tracking-[0.14em] text-muted">
             <tr>
@@ -146,7 +146,7 @@ function DesktopTable({ items }: { items: ServiceItem[] }) {
           </tbody>
         </table>
       </div>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <ItemCards items={items} />
       </div>
     </>

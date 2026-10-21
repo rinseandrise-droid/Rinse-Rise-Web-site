@@ -124,7 +124,7 @@ export function playScrollWorld(
     tl.to(q("cam-pan"), { x: panTo(WORLD.dryer.x), duration: 6 }, 60.5);
     tl.to(q("dryer-door"), { rotation: -118, duration: 3 }, 62);
 
-    // 66–75  tumble dry
+    // 66–75  dry
     tl.to(q("shirt-move"), { x: WORLD.dryer.x, y: WORLD.dryer.y, scale: 0.32, autoAlpha: 0, duration: 3 }, 65);
     tl.to(q("dryer-shirt"), { autoAlpha: 1, duration: 1.5 }, 66.5);
     tl.to(q("dryer-door"), { rotation: 0, duration: 2.5 }, 67);
@@ -140,16 +140,16 @@ export function playScrollWorld(
     tl.to(q("dryer-air"), { autoAlpha: 0, duration: 1.5 }, 75);
     tl.set(q("shirt-move"), { x: WORLD.dryer.x, y: WORLD.dryer.y - 8, rotation: 8, scale: 0.34, autoAlpha: 1 }, 76.2);
     tl.to(q("dryer-shirt"), { autoAlpha: 0, duration: 1 }, 76.2);
-    tl.to(q("shirt-move"), { x: WORLD.board.x - 40, y: WORLD.board.y - 140, rotation: 90, scale: 0.72, duration: 5 }, 76.5);
+    tl.to(q("shirt-move"), { x: WORLD.board.x + 120, y: WORLD.board.y - 130, rotation: 90, scale: 0.72, duration: 5 }, 76.5);
     tl.to(q("cam-pan"), { x: panTo(WORLD.board.x), duration: 5 }, 76.5);
     tl.to(q("cam-zoom"), { scale: 1.08, duration: 5 }, 76.5);
     tl.to(q("dryer-door"), { rotation: 0, duration: 2 }, 77);
 
     // 78–84  steam press
-    tl.to(q("shirt-move"), { rotation: 90, y: WORLD.board.y - 118, duration: 1.2 }, 78);
+    tl.to(q("shirt-move"), { x: WORLD.board.x + 120, y: WORLD.board.y - 118, rotation: 90, duration: 1.2 }, 78);
     tl.to(q("steam"), { autoAlpha: 1, duration: 1 }, 78.4);
-    tl.to(q("iron"), { x: WORLD.board.x - 160, y: WORLD.board.y - 70, duration: 3 }, 78.6);
-    tl.to(q("iron"), { x: WORLD.board.x + 140, y: WORLD.board.y - 70, duration: 2.4 }, 81.6);
+    tl.to(q("iron"), { x: WORLD.board.x - 80, y: WORLD.board.y - 90, duration: 3 }, 78.6);
+    tl.to(q("iron"), { x: WORLD.board.x + 80, y: WORLD.board.y - 90, duration: 2.4 }, 81.6);
     tl.to(pickPart(root, "shirt", "wrinkles"), { autoAlpha: 0, duration: 4 }, 79);
     tl.to(q("steam"), { autoAlpha: 0, duration: 1.2 }, 83.4);
 

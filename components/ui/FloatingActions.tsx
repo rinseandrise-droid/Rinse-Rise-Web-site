@@ -16,7 +16,7 @@ export function FloatingActions() {
   }, []);
 
   return (
-    <div className="fixed bottom-5 right-4 z-[60] flex flex-col items-end gap-3 sm:bottom-6 sm:right-6">
+    <div className="fixed right-3 z-[60] flex flex-col items-end gap-3 max-md:bottom-[max(0.75rem,var(--safe-bottom))] sm:right-6 sm:bottom-6">
       {showTop && (
         <button
           type="button"

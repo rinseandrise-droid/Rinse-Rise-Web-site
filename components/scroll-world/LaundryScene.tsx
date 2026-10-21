@@ -60,7 +60,7 @@ export function LaundryScene({ compact }: { compact: boolean }) {
   return (
     <svg
       className="h-full w-full"
-      viewBox={compact ? "420 40 760 1060" : "0 0 1600 900"}
+      viewBox={compact ? "560 80 480 820" : "0 0 1600 900"}
       preserveAspectRatio="xMidYMid slice"
       aria-hidden
       focusable="false"

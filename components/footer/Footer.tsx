@@ -9,26 +9,26 @@ import { Logo } from "../ui/Logo";
 export function Footer() {
   return (
     <footer className="mt-auto">
-      <section className="container-rr pb-16" aria-labelledby="footer-cta">
-        <div className="relative overflow-hidden rounded-[32px] bg-ink px-6 py-12 text-white sm:px-12 sm:py-14">
+      <section className="container-rr pb-10 sm:pb-16" aria-labelledby="footer-cta">
+        <div className="relative overflow-hidden rounded-[24px] bg-ink px-5 py-10 text-white sm:rounded-[32px] sm:px-12 sm:py-14">
           <div
             aria-hidden
             className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-orange/30 blur-3xl"
           />
-          <div className="relative flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
+          <div className="relative flex flex-col items-start justify-between gap-6 md:flex-row md:items-center md:gap-8">
             <div>
-              <h2 id="footer-cta" className="text-3xl font-extrabold sm:text-4xl">
+              <h2 id="footer-cta" className="text-2xl font-extrabold sm:text-3xl lg:text-4xl">
                 Don&apos;t let laundry take your time.
               </h2>
-              <p className="mt-2 text-lg text-white/70">Let Rinse &amp; Rise take care of it.</p>
+              <p className="mt-2 text-base text-white/70 sm:text-lg">Let Rinse &amp; Rise take care of it.</p>
             </div>
-            <BookPickupButton />
+            <BookPickupButton className="w-full md:w-auto" />
           </div>
         </div>
       </section>
 
       <div className="border-t border-line bg-cream">
-        <div className="container-rr grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <div className="container-rr grid gap-8 py-10 sm:grid-cols-2 sm:gap-10 sm:py-14 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <Logo />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted">

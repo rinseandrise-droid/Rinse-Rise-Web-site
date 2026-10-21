@@ -9,7 +9,7 @@ export function Toaster() {
   const toasts = useToasts();
   return (
     <div
-      className="pointer-events-none fixed inset-x-0 bottom-24 z-[70] flex flex-col items-center gap-2 px-4 sm:bottom-6 sm:items-end sm:pr-6"
+      className="pointer-events-none fixed inset-x-0 bottom-24 z-[70] flex flex-col items-center gap-2 px-4 max-md:bottom-[calc(5.5rem+var(--safe-bottom))] sm:bottom-6 sm:items-end sm:pr-6"
       role="status"
       aria-live="polite"
     >

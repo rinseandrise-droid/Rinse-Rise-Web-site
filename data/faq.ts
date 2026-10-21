@@ -27,7 +27,7 @@ export const faqs: FaqItem[] = [
     a: "Dry cleaning cleans fabric with a solvent instead of water. It suits delicate, structured or embellished garments — like coats, silk, heavy ethnic wear and lehengas — that may shrink, fade or lose shape in water.",
   },
   {
-    q: "Do you tumble dry clothes?",
+    q: "How are clothes dried?",
     a: "Only where the fabric allows it. The drying method is selected according to each garment's care requirements.",
   },
   {

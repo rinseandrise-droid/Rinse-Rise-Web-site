@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Manrope, Plus_Jakarta_Sans } from "next/font/google";
 import { AuthGateModal } from "@/components/auth/AuthGateModal";
 import { Footer } from "@/components/footer/Footer";
-import { AnnouncementBar } from "@/components/navbar/AnnouncementBar";
 import { Navbar } from "@/components/navbar/Navbar";
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
 import { FloatingActions } from "@/components/ui/FloatingActions";
@@ -46,6 +45,8 @@ export const viewport: Viewport = {
   themeColor: "#ff6a00",
   width: "device-width",
   initialScale: 1,
+  maximumScale: 5,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -59,7 +60,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           Skip to content
         </a>
-        <AnnouncementBar />
         <Navbar />
         <main id="main" className="flex-1">
           {children}

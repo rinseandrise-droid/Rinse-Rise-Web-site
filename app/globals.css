@@ -26,8 +26,18 @@
   --radius-md: 18px;
   --radius-lg: 28px;
 
-  --nav-h: 72px;
-  --announce-h: 40px;
+  --nav-h: 64px;
+  --announce-h: 36px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --header-stack: calc(var(--announce-h) + var(--nav-h) + var(--safe-top));
+}
+
+@media (min-width: 768px) {
+  :root {
+    --nav-h: 72px;
+    --announce-h: 40px;
+  }
 }
 
 @theme inline {
@@ -52,7 +62,8 @@
 /* ───────────── Base ───────────── */
 html {
   -webkit-text-size-adjust: 100%;
-  scroll-padding-top: calc(var(--nav-h) + 16px);
+  scroll-padding-top: calc(var(--header-stack) + 12px);
+  overflow-x: clip;
 }
 
 body {
@@ -61,6 +72,14 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x: clip;
+  padding-bottom: calc(5.5rem + var(--safe-bottom));
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
 }
 
 h1,
@@ -105,11 +124,11 @@ html.lenis body {
     width: 100%;
     max-width: 1240px;
     margin-inline: auto;
-    padding-inline: clamp(1rem, 4vw, 2rem);
+    padding-inline: clamp(0.9rem, 4vw, 2rem);
   }
 
   .section {
-    padding-block: clamp(4rem, 9vw, 7.5rem);
+    padding-block: clamp(3rem, 8vw, 7.5rem);
   }
 
   .eyebrow {
@@ -131,9 +150,9 @@ html.lenis body {
   }
 
   .section-title {
-    font-size: clamp(2rem, 4.6vw, 3.4rem);
+    font-size: clamp(1.7rem, 5vw, 3.4rem);
     font-weight: 800;
-    line-height: 1.05;
+    line-height: 1.08;
   }
 
   .neo {
@@ -175,10 +194,10 @@ html.lenis body {
     justify-content: center;
     gap: 0.55rem;
     min-height: 48px;
-    padding: 0.8rem 1.4rem;
+    padding: 0.8rem 1.25rem;
     border-radius: 999px;
     font-weight: 800;
-    font-size: 0.92rem;
+    font-size: 0.9rem;
     letter-spacing: 0.02em;
     white-space: nowrap;
     transition:
@@ -253,7 +272,7 @@ html.lenis body {
     box-shadow: var(--shadow-inset);
     border: 1px solid transparent;
     color: var(--text);
-    font-size: 0.95rem;
+    font-size: 16px;
     transition:
       border-color 0.2s ease,
       box-shadow 0.2s ease;
@@ -382,6 +401,42 @@ html.lenis body {
 }
 .animate-float-soft {
   animation: float-soft 6s ease-in-out infinite;
+}
+
+@media (min-width: 1440px) {
+  .container-rr {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container-rr {
+    max-width: 1440px;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn-row {
+    display: grid;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .card-hover:hover {
+    transform: none;
+  }
+
+  .chip {
+    min-height: 36px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.78rem;
+  }
+}
+
+@supports (padding: max(0px)) {
+  .safe-bottom {
+    padding-bottom: max(1.25rem, var(--safe-bottom));
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

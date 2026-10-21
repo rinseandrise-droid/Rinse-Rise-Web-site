@@ -18,7 +18,7 @@ export function ServiceShowcase() {
         <p className="mt-4 max-w-2xl text-muted">
           Four services from the shop rate card — names, units and prices exactly as listed.
         </p>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2">
+        <div className="mt-8 grid gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-6">
           {services.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}
@@ -32,7 +32,7 @@ export function ServiceCard({ service }: { service: Service }) {
   const Icon = ICONS[service.id as keyof typeof ICONS] ?? Shirt;
   const start = startingRate(service.items);
   return (
-    <article className="neo card-hover flex flex-col p-7">
+    <article className="neo card-hover flex min-w-0 flex-col p-5 sm:p-7">
       <span className="grid h-12 w-12 place-items-center rounded-2xl bg-orange-tint text-orange">
         <Icon className="h-6 w-6" aria-hidden />
       </span>
@@ -44,7 +44,7 @@ export function ServiceCard({ service }: { service: Service }) {
           <span className="ml-2 font-semibold text-orange-dark">from {formatRate(start)}</span>
         )}
       </p>
-      <Link href={`/services/${service.id}`} className="btn btn-secondary mt-6 self-start">
+      <Link href={`/services/${service.id}`} className="btn btn-secondary mt-6 w-full sm:w-auto sm:self-start">
         Explore service
         <ArrowRight className="btn-arrow h-4 w-4" aria-hidden />
       </Link>

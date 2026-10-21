@@ -48,27 +48,29 @@ function ScrollWorldFilm() {
 
 function IntroCopy() {
   return (
-    <div data-sw-intro className="pointer-events-none absolute inset-x-0 top-[18%] z-10 px-6 text-center sm:top-[16%]">
+    <div data-sw-intro className="pointer-events-none absolute inset-x-0 top-[12%] z-20 px-4 text-center sm:top-[14%] sm:px-8 xl:px-40">
       <p className="eyebrow mx-auto justify-center before:hidden">The garment&apos;s journey</p>
-      <h2 className="mx-auto mt-3 max-w-3xl font-display text-[clamp(2rem,6vw,4.4rem)] font-extrabold leading-[0.95] tracking-[-0.03em]">
+      <h2 className="mx-auto mt-2 max-w-3xl font-display text-[clamp(1.7rem,7vw,4.4rem)] font-extrabold leading-[0.98] tracking-[-0.03em] sm:mt-3">
         Your clothes deserve
         <br />
         more than a wash.
       </h2>
-      <p className="mt-4 text-lg text-muted">They deserve proper care.</p>
-      <p className="animate-bob mt-8 text-xs font-extrabold tracking-[0.22em] text-orange-dark">SCROLL TO BEGIN ↓</p>
+      <p className="mt-3 text-sm text-muted sm:mt-4 sm:text-lg">They deserve proper care.</p>
+      <p className="animate-bob mt-5 text-[0.65rem] font-extrabold tracking-[0.18em] text-orange-dark sm:mt-8 sm:text-xs sm:tracking-[0.22em]">
+        SCROLL TO BEGIN ↓
+      </p>
     </div>
   );
 }
 
 function FinaleCopy() {
   return (
-    <div data-sw-finale className="pointer-events-none absolute inset-0 z-10 grid place-items-center bg-canvas/55 px-6 text-center backdrop-blur-[2px]">
-      <div className="pointer-events-auto max-w-xl">
+    <div data-sw-finale className="pointer-events-none absolute inset-0 z-30 grid place-items-center bg-canvas/80 px-4 text-center backdrop-blur-[2px] sm:px-6">
+      <div className="pointer-events-auto w-full max-w-xl">
         <p className="eyebrow mx-auto justify-center">Ready for you</p>
-        <h2 className="mt-3 font-display text-[clamp(2.4rem,6vw,4.2rem)] font-extrabold leading-none">Packed. Pressed. Yours.</h2>
-        <p className="mt-4 text-muted">From hanger to doorstep — handled as one continuous craft.</p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <h2 className="mt-3 font-display text-[clamp(1.9rem,7vw,4.2rem)] font-extrabold leading-none">Packed. Pressed. Yours.</h2>
+        <p className="mt-3 text-sm text-muted sm:mt-4 sm:text-base">From hanger to doorstep — handled as one continuous craft.</p>
+        <div className="btn-row mt-6 flex flex-wrap items-center justify-center gap-3 sm:mt-8">
           <BookPickupButton />
           <a href="#services" className="btn btn-secondary">
             Explore services
@@ -81,19 +83,19 @@ function FinaleCopy() {
 
 function CaptionLayer() {
   return (
-    <div className="pointer-events-none absolute inset-x-0 bottom-10 z-10 px-5 sm:bottom-14 sm:left-12 sm:right-auto sm:max-w-md">
+    <div className="pointer-events-none absolute inset-x-4 bottom-24 z-20 sm:inset-x-8 sm:bottom-10 xl:left-28 xl:right-auto xl:w-[min(28rem,calc(100%-12rem))]">
       {CAPTIONS.map((c) => (
         <div
           key={c.id}
           data-caption
           data-in={c.in}
           data-out={c.out}
-          className="absolute inset-x-5 bottom-0 sm:inset-x-0"
+          className="absolute inset-x-0 bottom-0 rounded-2xl border border-line bg-canvas/92 px-4 py-3 shadow-[8px_12px_28px_rgba(150,110,80,0.12)] backdrop-blur-md sm:px-5 sm:py-4"
         >
-          {c.eyebrow && <p className="eyebrow">{c.eyebrow}</p>}
-          <h3 className="mt-2 font-display text-3xl font-extrabold sm:text-4xl">{c.title}</h3>
-          {c.body && <p className="mt-2 text-[0.95rem] leading-relaxed text-muted">{c.body}</p>}
-          {c.note && <p className="mt-2 text-xs font-semibold text-orange-dark">{c.note}</p>}
+          {c.eyebrow && <p className="text-[0.65rem] font-extrabold uppercase tracking-[0.16em] text-orange-dark">{c.eyebrow}</p>}
+          <h3 className="mt-1 font-display text-xl font-extrabold sm:text-2xl lg:text-3xl">{c.title}</h3>
+          {c.body && <p className="mt-1 text-sm leading-relaxed text-muted">{c.body}</p>}
+          {c.note && <p className="mt-1 text-xs font-semibold text-orange-dark">{c.note}</p>}
         </div>
       ))}
     </div>
@@ -101,30 +103,21 @@ function CaptionLayer() {
 }
 
 function ChipLayer() {
-  const groups = {
-    wash: "right-6 top-[28%] sm:right-14",
-    dry: "right-6 top-[30%] sm:right-14",
-    qc: "left-6 top-[32%] sm:left-14",
-  } as const;
   return (
-    <>
-      {(["wash", "dry", "qc"] as const).map((group) => (
-        <ul key={group} className={`pointer-events-none absolute z-10 flex flex-col gap-2 ${groups[group]}`}>
-          {CHIPS.filter((c) => c.group === group).map((c) => (
-            <li
-              key={c.id}
-              data-chip
-              data-in={c.in}
-              data-out={c.out}
-              className="inline-flex items-center gap-2 self-start rounded-full border border-line bg-white/90 px-3 py-1.5 text-[0.72rem] font-extrabold uppercase tracking-[0.14em] text-ink shadow-[6px_6px_16px_rgba(150,110,80,0.12)] backdrop-blur-md"
-            >
-              {c.check && <Check className="h-3.5 w-3.5 text-orange" aria-hidden />}
-              {c.label}
-            </li>
-          ))}
-        </ul>
+    <ul className="pointer-events-none absolute right-3 top-[22%] z-20 hidden w-40 flex-col items-end gap-2 md:flex lg:right-8">
+      {CHIPS.map((c) => (
+        <li
+          key={c.id}
+          data-chip
+          data-in={c.in}
+          data-out={c.out}
+          className="inline-flex max-w-full items-center gap-2 rounded-full border border-line bg-white/92 px-3 py-1.5 text-[0.68rem] font-extrabold uppercase tracking-[0.12em] text-ink shadow-[6px_6px_16px_rgba(150,110,80,0.12)] backdrop-blur-md"
+        >
+          {c.check && <Check className="h-3.5 w-3.5 shrink-0 text-orange" aria-hidden />}
+          {c.label}
+        </li>
       ))}
-    </>
+    </ul>
   );
 }
 
@@ -132,23 +125,24 @@ function ProgressRail() {
   return (
     <>
       <ol
-        className="pointer-events-none absolute left-5 top-1/2 z-10 hidden -translate-y-1/2 flex-col gap-3 lg:flex"
+        className="pointer-events-none absolute left-3 top-1/2 z-20 hidden w-11 -translate-y-1/2 flex-col items-center gap-3 xl:flex"
         aria-hidden
       >
+        <span className="absolute left-1/2 top-3 z-0 w-0.5 -translate-x-1/2 rounded-full bg-orange-tint" style={{ height: "calc(100% - 1.5rem)" }} />
+        <span
+          className="absolute left-1/2 top-3 z-0 w-0.5 origin-top -translate-x-1/2 rounded-full bg-orange"
+          style={{ height: "calc(var(--sw-p) * (100% - 1.5rem))" }}
+        />
         {STEPS.map((step, i) => (
-          <li key={step.id} className="flex items-center gap-3 text-[0.68rem] font-extrabold tracking-[0.16em] uppercase text-muted">
-            <span className="grid h-7 w-7 place-items-center rounded-full border border-line bg-white text-[0.65rem] text-ink">
+          <li key={step.id} className="relative z-10" title={step.label}>
+            <span className="grid h-8 w-8 place-items-center rounded-full border border-line bg-white text-[0.65rem] font-extrabold text-ink shadow-sm">
               {String(i + 1).padStart(2, "0")}
             </span>
-            <span>{step.label}</span>
+            <span className="sr-only">{step.label}</span>
           </li>
         ))}
-        <span
-          className="absolute left-[13px] top-3 w-0.5 origin-top bg-orange"
-          style={{ height: "calc(var(--sw-p) * 92%)" }}
-        />
       </ol>
-      <div className="absolute inset-x-8 top-4 z-10 h-1 overflow-hidden rounded-full bg-white/70 lg:hidden" aria-hidden>
+      <div className="absolute inset-x-4 top-3 z-20 h-1 overflow-hidden rounded-full bg-white/80 sm:inset-x-8 sm:top-4 xl:hidden" aria-hidden>
         <span className="block h-full origin-left bg-orange" style={{ transform: "scaleX(var(--sw-p))" }} />
       </div>
     </>
@@ -161,9 +155,9 @@ function ReducedMotionJourney() {
       <div className="container-rr">
         <p className="eyebrow">The garment&apos;s journey</p>
         <h2 className="section-title mt-3 max-w-2xl">From hanger to packed and ready.</h2>
-        <ol className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="mt-8 grid gap-3 sm:mt-10 sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((step, i) => (
-            <li key={step.id} className="neo-sm p-5">
+            <li key={step.id} className="neo-sm p-4 sm:p-5">
               <span className="text-xs font-extrabold tracking-[0.18em] text-orange">
                 {String(i + 1).padStart(2, "0")}
               </span>

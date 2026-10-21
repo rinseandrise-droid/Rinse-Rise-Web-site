@@ -97,9 +97,9 @@ export function BookFlow({ firstOrderEligible }: { firstOrderEligible: boolean }
   return (
     <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
       <div>
-        <ol className="mb-8 flex gap-2 text-xs font-extrabold uppercase tracking-[0.14em]">
+        <ol className="mb-6 flex gap-2 overflow-x-auto pb-1 text-[0.65rem] font-extrabold uppercase tracking-[0.12em] sm:mb-8 sm:text-xs sm:tracking-[0.14em] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {STEPS.map((label, i) => (
-            <li key={label} className={`rounded-full px-3 py-1 ${i === step ? "bg-orange text-white" : "bg-cream text-muted"}`}>
+            <li key={label} className={`shrink-0 rounded-full px-3 py-1 ${i === step ? "bg-orange text-white" : "bg-cream text-muted"}`}>
               {i + 1}. {label}
             </li>
           ))}
@@ -212,14 +212,14 @@ export function BookFlow({ firstOrderEligible }: { firstOrderEligible: boolean }
           </div>
         )}
 
-        <div className="mt-8 flex justify-between">
-          <button type="button" className="btn btn-secondary" disabled={step === 0} onClick={() => setStep((s) => s - 1)}>
+        <div className="mt-8 flex gap-3">
+          <button type="button" className="btn btn-secondary flex-1 sm:flex-none" disabled={step === 0} onClick={() => setStep((s) => s - 1)}>
             Back
           </button>
           {step < 3 && (
             <button
               type="button"
-              className="btn btn-primary"
+              className="btn btn-primary flex-1 sm:flex-none"
               disabled={step === 1 && !addressId}
               onClick={() => setStep((s) => s + 1)}
             >
@@ -229,7 +229,7 @@ export function BookFlow({ firstOrderEligible }: { firstOrderEligible: boolean }
         </div>
       </div>
 
-      <aside className="neo h-max p-6 lg:sticky lg:top-28">
+      <aside className="neo h-max p-5 sm:p-6 lg:sticky lg:top-[calc(var(--header-stack)+12px)]">
         <h2 className="font-display text-xl font-extrabold">Bill</h2>
         <div className="mt-5">
           <OrderTotals totals={totals} />
