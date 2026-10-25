@@ -15,7 +15,7 @@ export function WhyUs() {
       <div className="container-rr">
         <p className="eyebrow">Why Rinse &amp; Rise</p>
         <h2 className="section-title mt-3 max-w-2xl">These people take care of my clothes professionally.</h2>
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-[repeat(auto-fit,minmax(min(100%,16rem),1fr))] gap-5">
           {FEATURES.map((f) => (
             <article key={f.title} className="neo-sm p-6">
               <f.icon className="h-6 w-6 text-orange" aria-hidden />

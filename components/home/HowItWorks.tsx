@@ -38,7 +38,7 @@ export function HowItWorks() {
       <div className="container-rr">
         <p className="eyebrow">How it works</p>
         <h2 className="section-title mt-3">Six quiet steps. Clothes come back right.</h2>
-        <ol className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <ol className="mt-12 grid grid-cols-[repeat(auto-fit,minmax(min(100%,16rem),1fr))] gap-5">
           {STEPS.map((s) => (
             <li key={s.n} data-step className="neo-sm p-6">
               <span className="font-display text-3xl font-extrabold text-orange">{s.n}</span>

@@ -18,7 +18,7 @@ export function ServiceShowcase() {
         <p className="mt-4 max-w-2xl text-muted">
           Four services from the shop rate card — names, units and prices exactly as listed.
         </p>
-        <div className="mt-8 grid gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-6">
+        <div className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(min(100%,18rem),1fr))] gap-5 sm:mt-12 sm:gap-6">
           {services.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}

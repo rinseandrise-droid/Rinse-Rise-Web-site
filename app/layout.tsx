@@ -52,7 +52,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en-IN" className={`${manrope.variable} ${jakarta.variable}`}>
-      <body className="flex min-h-screen flex-col">
+      <body className="flex min-h-screen min-w-0 flex-col">
         <LoadingScreen />
         <a
           href="#main"
@@ -61,7 +61,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           Skip to content
         </a>
         <Navbar />
-        <main id="main" className="flex-1">
+        <main id="main" className="min-w-0 flex-1">
           {children}
         </main>
         <div id="back-to-top-sentinel" aria-hidden className="pointer-events-none absolute top-[150vh] h-px w-px" />

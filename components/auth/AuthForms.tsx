@@ -66,27 +66,27 @@ export function SignupForm() {
       {banner && <p className="rounded-2xl bg-red-50 px-4 py-3 text-sm font-semibold text-danger">{banner}</p>}
       <label>
         <span className="field-label">Full name</span>
-        <input className="input" name="fullName" autoComplete="name" required />
+        <input className="input" name="fullName" autoComplete="name" required aria-invalid={!!errors.fullName} />
         <FieldError message={errors.fullName} />
       </label>
       <label>
         <span className="field-label">Mobile number</span>
-        <input className="input" name="phone" type="tel" inputMode="numeric" autoComplete="tel" required />
+        <input className="input" name="phone" type="tel" inputMode="numeric" autoComplete="tel" required aria-invalid={!!errors.phone} />
         <FieldError message={errors.phone} />
       </label>
       <label>
         <span className="field-label">Email</span>
-        <input className="input" name="email" type="email" autoComplete="email" required />
+        <input className="input" name="email" type="email" autoComplete="email" required aria-invalid={!!errors.email} />
         <FieldError message={errors.email} />
       </label>
       <label>
         <span className="field-label">Password</span>
-        <input className="input" name="password" type="password" autoComplete="new-password" required />
+        <input className="input" name="password" type="password" autoComplete="new-password" required aria-invalid={!!errors.password} />
         <FieldError message={errors.password} />
       </label>
       <label>
         <span className="field-label">Confirm password</span>
-        <input className="input" name="confirmPassword" type="password" autoComplete="new-password" required />
+        <input className="input" name="confirmPassword" type="password" autoComplete="new-password" required aria-invalid={!!errors.confirmPassword} />
         <FieldError message={errors.confirmPassword} />
       </label>
       <button type="submit" className="btn btn-primary mt-2" disabled={busy}>
@@ -145,12 +145,12 @@ export function LoginForm() {
       {banner && <p className="rounded-2xl bg-red-50 px-4 py-3 text-sm font-semibold text-danger">{banner}</p>}
       <label>
         <span className="field-label">Email</span>
-        <input className="input" name="email" type="email" autoComplete="email" required />
+        <input className="input" name="email" type="email" autoComplete="email" required aria-invalid={!!errors.email} />
         <FieldError message={errors.email} />
       </label>
       <label>
         <span className="field-label">Password</span>
-        <input className="input" name="password" type="password" autoComplete="current-password" required />
+        <input className="input" name="password" type="password" autoComplete="current-password" required aria-invalid={!!errors.password} />
         <FieldError message={errors.password} />
       </label>
       <div className="flex justify-end">

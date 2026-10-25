@@ -4,7 +4,7 @@ import { BookPickupButton } from "@/components/ui/BookPickupButton";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pb-10 pt-6 sm:pb-16 sm:pt-10 lg:pb-20 lg:pt-14">
+    <section className="relative overflow-hidden pb-8 pt-5 sm:pb-16 sm:pt-10 lg:pb-20 lg:pt-14">
       <div aria-hidden className="pointer-events-none absolute -left-24 top-10 h-56 w-56 rounded-full bg-orange/15 blur-3xl sm:h-72 sm:w-72" />
       <div aria-hidden className="pointer-events-none absolute -right-16 top-32 hidden h-80 w-80 rounded-full bg-orange-soft/20 blur-3xl sm:block" />
       <div className="container-rr grid items-center gap-8 md:gap-12 lg:grid-cols-[1.15fr_0.85fr]">
@@ -33,7 +33,7 @@ export function Hero() {
       </div>
       <a
         href="#journey"
-        className="mx-auto mt-10 flex w-max max-w-[calc(100%-2rem)] flex-col items-center gap-2 px-2 text-center text-[0.65rem] font-extrabold tracking-[0.16em] text-orange-dark sm:mt-14 sm:text-[0.72rem] sm:tracking-[0.2em]"
+        className="mx-auto mt-7 flex w-max max-w-[calc(100%-2rem)] flex-col items-center gap-2 px-2 text-center text-[0.65rem] font-extrabold tracking-[0.16em] text-orange-dark sm:mt-14 sm:text-[0.72rem] sm:tracking-[0.2em]"
       >
         <span className="sm:hidden">SCROLL THE JOURNEY ↓</span>
         <span className="hidden sm:inline">SCROLL TO EXPERIENCE THE JOURNEY</span>

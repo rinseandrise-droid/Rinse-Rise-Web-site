@@ -212,7 +212,7 @@ export function BookFlow({ firstOrderEligible }: { firstOrderEligible: boolean }
           </div>
         )}
 
-        <div className="mt-8 flex gap-3">
+        <div className="btn-row mt-8">
           <button type="button" className="btn btn-secondary flex-1 sm:flex-none" disabled={step === 0} onClick={() => setStep((s) => s - 1)}>
             Back
           </button>

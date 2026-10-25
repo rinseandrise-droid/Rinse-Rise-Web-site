@@ -59,7 +59,7 @@ function Backdrop({ particles }: { particles: number }) {
 export function LaundryScene({ compact }: { compact: boolean }) {
   return (
     <svg
-      className="h-full w-full"
+      className="h-full w-full max-w-full"
       viewBox={compact ? "560 80 480 820" : "0 0 1600 900"}
       preserveAspectRatio="xMidYMid slice"
       aria-hidden

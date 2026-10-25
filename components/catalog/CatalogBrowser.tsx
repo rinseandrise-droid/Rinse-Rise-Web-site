@@ -55,7 +55,7 @@ export function CatalogBrowser({
             placeholder="Search for shirts, sarees, blankets…"
           />
         </label>
-        <div className="-mx-1 mt-4 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className="mt-4 flex flex-wrap gap-2">
           <FilterChip label="All services" active={serviceId === "all"} onClick={() => setServiceId("all")} />
           {services.map((s) => (
             <FilterChip key={s.id} label={s.name} active={serviceId === s.id} onClick={() => setServiceId(s.id)} />

@@ -20,7 +20,10 @@ export function FloatingActions() {
       {showTop && (
         <button
           type="button"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          onClick={() => {
+            if (!window.dispatchEvent(new CustomEvent("rr-scroll-to", { detail: 0, cancelable: true }))) return;
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
           className="grid h-11 w-11 place-items-center rounded-full neo-sm transition-transform hover:-translate-y-0.5"
           aria-label="Back to top"
         >

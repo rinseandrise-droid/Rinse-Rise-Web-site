@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { navLinks } from "@/data/site";
 import { useCart } from "@/lib/cart";
+import { useMediaQuery } from "@/lib/use-media-query";
 import { useSession } from "@/lib/use-session";
 import { BookPickupButton } from "../ui/BookPickupButton";
 import { Logo } from "../ui/Logo";
@@ -15,8 +16,15 @@ export function Navbar() {
   const pathname = usePathname();
   const session = useSession();
   const cartLines = useCart();
+  const wide = useMediaQuery("(min-width: 80rem)");
   const [open, setOpen] = useState(false);
+  const [menuPath, setMenuPath] = useState(pathname);
   const [scrolled, setScrolled] = useState(false);
+  if (menuPath !== pathname) {
+    setMenuPath(pathname);
+    setOpen(false);
+  }
+  if (wide && open) setOpen(false);
 
   useEffect(() => {
     const sentinel = document.getElementById("nav-sentinel");
@@ -28,22 +36,41 @@ export function Navbar() {
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
+    window.dispatchEvent(new CustomEvent("rr-scroll-lock", { detail: open }));
     if (!open) return;
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+
+    const header = document.querySelector("header");
+    const focusables = header?.querySelectorAll<HTMLElement>('a[href], button:not([disabled])');
+    const first = focusables?.[0];
+    const last = focusables?.[focusables.length - 1];
+    first?.focus();
+
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+        return;
+      }
+      if (e.key !== "Tab" || !first || !last) return;
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
     const onResize = () => {
-      if (window.innerWidth >= 1280) setOpen(false);
+      if (window.matchMedia("(min-width: 80rem)").matches) setOpen(false);
     };
     window.addEventListener("keydown", onKey);
     window.addEventListener("resize", onResize);
     return () => {
+      document.body.style.overflow = "";
+      window.dispatchEvent(new CustomEvent("rr-scroll-lock", { detail: false }));
       window.removeEventListener("keydown", onKey);
       window.removeEventListener("resize", onResize);
     };
   }, [open]);
-
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
 
   const isActive = (href: string) => (href === "/" ? pathname === "/" : !href.includes("#") && pathname.startsWith(href));
   const signedIn = session.status === "signed-in";
@@ -60,7 +87,7 @@ export function Navbar() {
         <nav className="container-rr flex h-[var(--nav-h)] items-center justify-between gap-2 sm:gap-4" aria-label="Main">
           <Logo />
 
-          <ul className="hidden items-center gap-0.5 xl:flex">
+          <ul className={`${wide ? "flex" : "hidden"} min-w-0 items-center gap-0.5`}>
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
@@ -90,7 +117,7 @@ export function Navbar() {
                 </span>
               )}
             </Link>
-            <Link href={signedIn ? "/account" : "/login"} className="btn btn-ghost btn-sm hidden lg:inline-flex">
+            <Link href={signedIn ? "/account" : "/login"} className={`btn btn-ghost btn-sm ${wide ? "inline-flex" : "hidden"}`}>
               {signedIn ? (
                 <>
                   <User className="h-4 w-4" aria-hidden /> Account
@@ -99,10 +126,10 @@ export function Navbar() {
                 "Login"
               )}
             </Link>
-            <BookPickupButton size="sm" className="hidden lg:inline-flex" showArrow={false} />
+            <BookPickupButton size="sm" className={wide ? "inline-flex" : "hidden"} showArrow={false} />
             <button
               type="button"
-              className="grid h-10 w-10 place-items-center rounded-full neo-sm sm:h-11 sm:w-11 xl:hidden"
+              className={`grid h-10 w-10 place-items-center rounded-full neo-sm sm:h-11 sm:w-11 ${wide ? "hidden" : ""}`}
               aria-expanded={open}
               aria-controls="mobile-menu"
               aria-label={open ? "Close menu" : "Open menu"}
@@ -116,8 +143,8 @@ export function Navbar() {
         {open && (
           <div
             id="mobile-menu"
-            className="fixed inset-x-0 bottom-0 z-40 overflow-y-auto bg-canvas xl:hidden"
-            style={{ top: "var(--header-stack)" }}
+            className="fixed inset-x-0 bottom-0 z-40 overflow-y-auto bg-canvas"
+            style={{ top: "var(--header-stack)", height: "calc(100dvh - var(--header-stack))" }}
           >
             <div className="container-rr flex min-h-full flex-col gap-1 py-5 pb-24">
               {navLinks.map((link) => (

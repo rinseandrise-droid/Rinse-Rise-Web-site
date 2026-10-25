@@ -1,11 +1,12 @@
 import { z } from "zod";
 import { bookingWindowDays, pickupSlots } from "@/data/site";
+import { isIndianMobile, normalizeIndianMobile } from "@/lib/phone";
 
 export const phoneSchema = z
   .string()
   .trim()
-  .transform((v) => v.replace(/[\s-]/g, "").replace(/^\+?91/, ""))
-  .refine((v) => /^[6-9]\d{9}$/.test(v), "Enter a valid 10-digit mobile number");
+  .transform((v) => normalizeIndianMobile(v))
+  .refine((v) => isIndianMobile(v), "Enter a valid 10-digit mobile number");
 
 export const signupSchema = z
   .object({

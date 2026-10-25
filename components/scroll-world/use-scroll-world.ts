@@ -2,6 +2,9 @@
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { activeStepIndex, headerStackPx, pinEndDistance } from "@/lib/journey-progress";
+import { onViewportChange } from "@/lib/observe-viewport";
+import { STEPS } from "./journey";
 import { WORLD } from "./scene-utils";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -29,6 +32,21 @@ export function playScrollWorld(
 ): () => void {
   const q = (name: string) => pick(root, name);
   const shirtStart = { x: WORLD.hanger.x, y: WORLD.hanger.y + 35 };
+  const stepNodes = root.querySelectorAll<HTMLElement>("[data-step]");
+  const live = root.querySelector<HTMLElement>("[data-sw-live]");
+  let lastStep = -2;
+
+  const syncStage = (progress: number) => {
+    root.style.setProperty("--sw-p", progress.toFixed(4));
+    const index = activeStepIndex(progress, STEPS);
+    if (index === lastStep) return;
+    lastStep = index;
+    stepNodes.forEach((el, i) => {
+      el.dataset.active = i === index ? "true" : "false";
+    });
+    if (live) live.textContent = index < 0 ? "" : `Stage ${String(index + 1).padStart(2, "0")}: ${STEPS[index].label}`;
+  };
+
   const ctx = gsap.context(() => {
     gsap.set(q("cam-pan"), { x: 0, y: 0 });
     gsap.set(q("cam-zoom"), { scale: 1, transformOrigin: "800px 450px" });
@@ -61,14 +79,18 @@ export function playScrollWorld(
       defaults: { ease: "none" },
       scrollTrigger: {
         trigger: root,
-        start: "top top",
-        end: options.compact ? "+=620%" : "+=900%",
+        start: () => `top ${headerStackPx(document.querySelector("header"))}px`,
+        end: pinEndDistance(options.compact),
         pin,
-        scrub: 0.55,
+        scrub: 0.4,
         anticipatePin: 1,
         invalidateOnRefresh: true,
+        fastScrollEnd: true,
+        onToggle: (self) => {
+          root.classList.toggle("is-active", self.isActive);
+        },
         onUpdate: (self) => {
-          root.style.setProperty("--sw-p", self.progress.toFixed(4));
+          syncStage(self.progress);
         },
       },
     });
@@ -118,7 +140,7 @@ export function playScrollWorld(
 
     // 58–66  transfer to dryer
     tl.to(q("washer-door"), { rotation: -118, duration: 3 }, 58);
-    tl.set(q("shirt-move"), { x: WORLD.washer.x, y: WORLD.washer.y - 10, rotation: -20, scale: 0.34, autoAlpha: 1 }, 60);
+    tl.to(q("shirt-move"), { x: WORLD.washer.x, y: WORLD.washer.y - 10, rotation: -20, scale: 0.34, autoAlpha: 1, duration: 0.4 }, 60);
     tl.to(q("washer-shirt"), { autoAlpha: 0, duration: 1 }, 60);
     tl.to(q("shirt-move"), { x: WORLD.dryer.x, y: WORLD.dryer.y - 210, rotation: -12, scale: 0.8, duration: 6 }, 60.5);
     tl.to(q("cam-pan"), { x: panTo(WORLD.dryer.x), duration: 6 }, 60.5);
@@ -138,7 +160,7 @@ export function playScrollWorld(
     tl.to(q("dryer-door"), { rotation: -118, duration: 2.5 }, 74.5);
     tl.to(q("dryer-heat"), { autoAlpha: 0, duration: 1.5 }, 75);
     tl.to(q("dryer-air"), { autoAlpha: 0, duration: 1.5 }, 75);
-    tl.set(q("shirt-move"), { x: WORLD.dryer.x, y: WORLD.dryer.y - 8, rotation: 8, scale: 0.34, autoAlpha: 1 }, 76.2);
+    tl.to(q("shirt-move"), { x: WORLD.dryer.x, y: WORLD.dryer.y - 8, rotation: 8, scale: 0.34, autoAlpha: 1, duration: 0.4 }, 76.2);
     tl.to(q("dryer-shirt"), { autoAlpha: 0, duration: 1 }, 76.2);
     tl.to(q("shirt-move"), { x: WORLD.board.x + 120, y: WORLD.board.y - 130, rotation: 90, scale: 0.72, duration: 5 }, 76.5);
     tl.to(q("cam-pan"), { x: panTo(WORLD.board.x), duration: 5 }, 76.5);
@@ -196,5 +218,18 @@ export function playScrollWorld(
     tl.to({}, { duration: 0.01 }, BEATS);
   }, root);
 
-  return () => ctx.revert();
+  const stopViewport = onViewportChange(() => {
+    ScrollTrigger.refresh();
+  }, 100);
+  const pinObserver = new ResizeObserver(() => ScrollTrigger.refresh());
+  pinObserver.observe(pin);
+  void document.fonts?.ready.then(() => ScrollTrigger.refresh());
+  requestAnimationFrame(() => ScrollTrigger.refresh());
+
+  return () => {
+    stopViewport();
+    pinObserver.disconnect();
+    root.classList.remove("is-active");
+    ctx.revert();
+  };
 }

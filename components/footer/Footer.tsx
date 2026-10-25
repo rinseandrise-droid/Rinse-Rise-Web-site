@@ -28,7 +28,7 @@ export function Footer() {
       </section>
 
       <div className="border-t border-line bg-cream">
-        <div className="container-rr grid gap-8 py-10 sm:grid-cols-2 sm:gap-10 sm:py-14 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <div className="container-rr grid gap-8 py-10 sm:grid-cols-2 sm:gap-10 sm:py-14 min-[80rem]:grid-cols-[minmax(0,1.4fr)_repeat(3,minmax(0,1fr))]">
           <div>
             <Logo />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted">
